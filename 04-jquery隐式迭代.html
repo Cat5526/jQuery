@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 对一样的元素进行相同操作 -->
+</head>
+<body>
+    <div>aaaa</div>
+    <div>bbbb</div>
+    <div>cccc</div>
+    <div>dddd</div>
+    <ul>
+        <li>1111</li>
+        <li>2222</li>
+        <li>3333</li>
+    </ul>
+    <script>
+        $(function(){
+            $("div").css("background","red");//获取四个div  并把它们的背景颜色变红
+            $("ul li").css("color","blue");//获取ul里所有li,并把他们的颜色变蓝
+
+
+            //$("").css("","");
+        })
+    </script>
+</body>
+</html>

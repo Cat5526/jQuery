@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <video src="./img/sl.mp4" width="400" muted></video>
+    <script>
+        //DOM转换为jquery   第一种方法
+        // $('video');
+        //DOM转换为jquery   第二种方法
+        var vd = document.querySelector('video');
+       // $(vd).play();//因为vd本来就是一个对象了，所以不用加''  jquery里没有play()方法，所以播放不了
+        vd.play(); //可以播放
+
+
+       //jquery对象转换为DOM对象
+       //第一种方法
+       $('video')[0].play();//可以播放
+       $('video').get(0).play();//可以播放
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jquery获取统一方法 
+    $('各类选择器(id class 标签 并集 交集等等)');
+    -->
+</head>
+<body>
+    <div></div>
+    <p class="nav"></p>
+    <ol>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+    </ol>
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+    </ul>
+    <script>
+        $(function(){
+            $("div");  //标签选择器
+            console.log($("div"));
+            $(".nav");  //类选择器
+            console.log($(".nav"));
+            $("ul li");  //后代选择器 ul里所有li
+            console.log($("ul li"));
+            $("ol>li");  //儿子选择器 ol里第一个li
+            console.log($("ol>li"));
+        })
+    </script>
+</body>
+</html>

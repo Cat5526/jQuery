@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .nav{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>我是原来的li</li>
+    </ul>
+    <div class="nav">
+        111
+    </div>
+    <script>
+        // 创建元素
+        var li = $("<li>我是后来的li</li>");
+        //添加元素
+        //内部添加  父子关系
+        // $("ul").append(li);//把内容添加到后面
+        $("ul").prepend(li);//把内容添加到前面
+        //外部添加
+        var div = $("<div>我是后面创建的div</div>");
+        // $(".nav").before(div);//把内容放到原先div前面
+        $(".nav").after(div);//把内容放到原先div后面
+
+        //删除元素
+        // $("ul").remove();   //删除ul
+        // $("ul").empty();  //删除ul里的孩子 ul还在
+        $("ul").html("");//删除ul里的孩子 ul还在
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+        span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <span></span>
+    <script>
+        //DOM对象获取div
+        var div = document.querySelector('div');
+        console.log(div);
+        //DOM对象只能使用原生JS的属性和方法
+        div.style.display = 'none';
+
+
+
+        //jquery对象获取span
+        $('span');
+        console.log($('span'));//伪数组形式存储
+        //jquery对象只能使用jquery方法，两者不能混用
+        $('span').hide();
+    </script>
+</body>
+</html>

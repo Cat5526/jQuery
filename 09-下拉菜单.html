@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        li{
+            list-style: none;
+        }
+        .nav>li{
+            float: left;
+            display: block;
+            width: 100px;
+            height: 20px;
+            margin-left: 10px;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .nav ul{
+            width: 100px;
+            text-align: left;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="">微博</a>
+            <ul>
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+        </li>
+        <li>
+            <a href="">微博</a>
+            <ul>
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+        </li>
+        <li>
+            <a href="">微博</a>
+            <ul>
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        $(function(){
+            $("ul>li").mouseover(function(){
+                $(this).children("ul").show();
+            })
+            $("ul>li").mouseout(function(){
+                $(this).children("ul").hide();
+            })
+        })
+    </script>
+</body>
+</html>

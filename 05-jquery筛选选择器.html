@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>这是ul下的li</li>
+        <li>这是ul下的li</li>
+        <li>这是ul下的li</li>
+        <li>这是ul下的li</li>
+        <li>这是ul下的li</li>
+        <li>这是ul下的li</li>
+    </ul>
+    <ol>
+        <li>这是ol下的li</li>
+        <li>这是ol下的li</li>
+        <li>这是ol下的li</li>
+        <li>这是ol下的li</li>
+        <li>这是ol下的li</li>
+    </ol>
+    <script>
+        $(function(){
+            $("ul li:first").css("color","red");//选取第一个li
+            $("ul li:last").css("color","blue");//选取最后一个li
+            $("ul li:eq(2)").css("color","green");//选取第几个li  索引从0开始
+            $("ol li:odd").css("color","red");//选取索引号为奇数
+            $("ol li:even").css("color","blue");//选取索引号为偶数  索引从0开始
+
+
+
+
+        })
+    </script>
+    
+</body>
+</html>
